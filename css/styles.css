@@ -10,6 +10,8 @@
     --btn-bg-color: #4D5AE5;
     --white-color: #FFFFFF;
     --footer-text-color: #E7E9FC;
+    --valid-fields: #31D0AA;
+    --section4-icons-color: #8E8F99;
 }
 
 body{
@@ -155,6 +157,17 @@ img {
     color: var(--accent-color);
 }
 
+.menu-link:hover:after,
+.menu-link:focus:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+
+}
+
 .header-address {
     font-style: normal;
     margin-left: auto;
@@ -178,6 +191,13 @@ img {
     background-color: var(--primary-bg-color);
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../image/hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-header {
@@ -223,6 +243,16 @@ img {
 .section1-item {
     flex-basis: calc((100% - 72px) / 4);
 }
+
+.section1-icon-div {
+    width: 264px;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 8px;
+}
 /* -----------------/INDEX SECTION 1-------------------- */
 
 
@@ -254,8 +284,71 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+
+.section3-text-margin {
+    margin-bottom: 8px;
+}
+
+.socials-links-list {
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    background-color: var(--btn-bg-color);
+    border-radius: 50%;
+}
+
+.socials-links:hover,
+.btn-button:focus {
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
 /* -----------------/INDEX SECTION 3-------------------- */
 
+/* -----------------INDEX SECTION 4-------------------- */
+.section4 {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+.section4-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 31px;
+    padding-right: 31px;
+    border: 1px solid var(--section4-icons-color);
+    border-radius: 4px;
+}
+
+.section4-icons {
+    fill: var(--section4-icons-color);
+}
+
+.section4-icons-link:hover,
+.section4-icons-link:focus {
+    border-color: var(--accent-color);
+}
+
+.section4-icons-link:hover
+.section4-icons {
+    fill: var(--accent-color);
+}
+
+.footer-header {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+/* -----------------/INDEX SECTION 4-------------------- */
 
 /* -----------------PORTFOLIO MAIN SECTION-------------------- */
 .section {
@@ -303,12 +396,22 @@ img {
     flex-basis: calc((100% - 48px) / 3);
 }
 
+.cards-item:hover,
+.cards-item:focus {
+    box-shadow: 
+    0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    cursor: pointer;
+}
+
 .text-under-img {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
     border: 1px solid var(--footer-text-color);
     border-top-color: transparent;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /* -----------------/PORTFOLIO MAIN SECTION-------------------- */
 
@@ -320,6 +423,10 @@ img {
     background-color: var(--primary-bg-color);
 }
 
+.footer-container {
+    display: flex;
+}
+
 .icon-link-footer {
     color: var(--secondary-bg-color);
     line-height: 1.17;
@@ -329,6 +436,24 @@ img {
     margin-top: 16px;
     color: var(--footer-text-color);
     width: 264px;
+}
+
+.footer-left-side {
+    margin-right: 120px;
+}
+
+
+.footer-header {
+    color: var(--white-color);
+}
+
+.socials-links-footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-links-footer:hover,
+.socials-links-footer:focus {
+    background-color: var(--valid-fields);
 }
 /* -----------------/FOOTER-------------------- */
 
