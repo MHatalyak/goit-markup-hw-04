@@ -404,8 +404,12 @@ img {
     flex-basis: calc((100% - 48px) / 3);
 }
 
-.cards-item:hover,
-.cards-item:focus {
+.cards-link {
+    display: block;
+}
+
+.cards-link:hover,
+.cards-link:focus {
     box-shadow: 
     0px 1px 6px rgba(46, 47, 66, 0.08), 
     0px 1px 1px rgba(46, 47, 66, 0.16), 
