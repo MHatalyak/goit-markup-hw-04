@@ -306,7 +306,7 @@ img {
 }
 
 .socials-links:hover,
-.btn-button:focus {
+.socials-links:focus {
     background-color: var(--accent-color);
     cursor: pointer;
 }
@@ -344,6 +344,11 @@ img {
 }
 
 .section4-icons-link:hover
+.section4-icons {
+    fill: var(--accent-color);
+}
+
+.section4-icons-link:focus 
 .section4-icons {
     fill: var(--accent-color);
 }
